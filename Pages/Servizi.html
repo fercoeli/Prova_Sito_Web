@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header>
+    <header> <!-- Idem Home cambia il titolo -->
       <div class="navbar">
         <nav>
           <ul>
@@ -33,7 +33,7 @@
               <a href="../Pages/Nostra Storia.html">Nostra Storia</a>
             </li>
             <li>
-              <a href="../Pages/Servizi.html">Servizi</a>
+              <a class="active" href="../Pages/Servizi.html">Servizi</a>
             </li>
             <li>
               <a href="../Pages/Progetti.html">Progetti</a>
@@ -53,7 +53,7 @@
       </div>
     </header>
 
-    <main>
+    <main> <!-- include 4 grandi blocchi: 1-Aside (NavBar), 2-Solo Testo, 3-IMG/Testo, 4-Link -->
       <aside>
         <div class="aside-navigation-bar">
           <nav>
@@ -89,27 +89,32 @@
           tecnologica propone, rendendo il percorso verso la
           <u>Digital Transformation</u> più semplice ed efficace
         </h3>
-        <div class="img-servizi">
+      </div>
+
+      <div class="img-servizi">
           <img src="../Images/Servizi/Digital marketing.png" />
           <h3>Digital Marketing</h3>
           <img src="../Images/Servizi/Sviluppo software.jpg" />
           <h3>Sviluppo Software</h3>
           <img src="../Images/Servizi/Project Management.jpg" />
           <h3>Project Management</h3>
-        </div>
+      </div>
+      
+      <div class="link-contatti">
         <br />
         <a href="Contatti.html"> Vuoi conoscere meglio i nostri servizi?</a>
         <br />
       </div>
+      
     </main>
 
-    <footer>
-      <section class="logo">
+    <footer> <!-- idem tutte le pagine -->
+      <div class="logo">
         <img src="../Images/Footer/alchemy.png" />
         <h2>&reg Tech Solutions</h2>
-      </section>
+      </div>
 
-      <section class="navfooter">
+      <div class="navfooter">
         <div class="navbar">
           <nav>
             <ul>
@@ -131,9 +136,9 @@
             </ul>
           </nav>
         </div>
-      </section>
+      </div>
 
-      <section class="info-personali">
+      <div class="info-personali">
         <ul>
           <li>
             <i class="fa-sharp fa-solid fa-map-location-dot"></i>
@@ -162,7 +167,7 @@
             >
           </li>
         </ul>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

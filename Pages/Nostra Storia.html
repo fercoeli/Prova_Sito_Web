@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header>
+    <header> <!-- Idem Home cambia il titolo -->
       <div class="navbar">
         <nav>
           <ul>
@@ -30,7 +30,7 @@
               <a href="../Pages/Chi Siamo.html">Chi Siamo</a>
             </li>
             <li>
-              <a href="../Pages/Nostra Storia.html">Nostra Storia</a>
+              <a class="active" href="../Pages/Nostra Storia.html">Nostra Storia</a>
             </li>
             <li>
               <a href="../Pages/Servizi.html">Servizi</a>
@@ -53,7 +53,7 @@
       </div>
     </header>
 
-    <main>
+    <main> <!-- include 3 grandi blocchi: 1-Aside (NavBar), 2-Solo Testo, 3-Solo IMG -->
       <aside>
         <div class="aside-navigation-bar">
           <nav>
@@ -102,9 +102,13 @@
           inventore mollitia iste cum facilis illum dolor iusto perspiciatis ea
           accusantium temporibus!
         </h3>
-        <div class="storia-img">
+      </div>
+
+      <div class="storia-img">
           <img src="../Images/Storia/Evoluzione azienda1.png" />
-        </div>
+      </div>
+
+      <div class="testo-storia">
         <br />
         <h3>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
@@ -116,13 +120,13 @@
       </div>
     </main>
 
-    <footer>
-      <section class="logo">
+    <footer> <!-- idem tutte le pagine -->
+      <div class="logo">
         <img src="../Images/Footer/alchemy.png" />
         <h2>&reg Tech Solutions</h2>
-      </section>
+      </div>
 
-      <section class="navfooter">
+      <div class="navfooter">
         <div class="navbar">
           <nav>
             <ul>
@@ -144,9 +148,9 @@
             </ul>
           </nav>
         </div>
-      </section>
+      </div>
 
-      <section class="info-personali">
+      <div class="info-personali">
         <ul>
           <li>
             <i class="fa-sharp fa-solid fa-map-location-dot"></i>
@@ -175,7 +179,7 @@
             >
           </li>
         </ul>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

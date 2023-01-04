@@ -22,14 +22,19 @@ body {
     font-weight: 600;
     color: #000;
     text-decoration: none;
+    padding: 15px;
 }
 
-.navbar nav ul li a:hover { /* senza Section:Header cosí serve per navbar Footer */
+.navbar nav ul li a:hover:not(.active) { /* senza Section:Header cosí serve per navbar Footer */
     text-decoration: underline double darkblue 2px;
 }
 
+.active { /* solo per navbar del Header -identifica pagina in cui ci si trova */
+    background-color: #bfbed5;
+}
 
-/* SECTION PER STILI HEADER */
+
+/* SECTION PER STILI HEADER -immagine e testo- */
 
 header .img-header {
     position: relative;
@@ -67,7 +72,7 @@ footer .logo img {
 
 footer .logo h2 {
     text-align: center;
-    margin: 0; /* per eliminare margin */
+    margin: 0; /* senza margin per essere vicino al logo */
     color: rgb(61, 61, 61);
     border-bottom: 0.5px solid black; /* linea divisoria navbar footer */
 }
@@ -95,6 +100,7 @@ footer .info-personali ul li a:hover {
 footer .info-personali ul li i {
     font-size: 18px;
 }
+
 
 /* SECTION PER STILI HOME PAGE */
 
@@ -128,14 +134,15 @@ main .messagio-iniziale .strategia-home a {
     color: white;
     border-radius: 3px;
     background-color: #1a1a70;
-    padding: 15px 60px;
-    font-size: 30px;
+    padding: 13px 60px;
+    font-size: 28px;
     text-decoration: none;
 }
 
 main .messagio-iniziale .strategia-home a:hover, main .messagio-finale .raccontaci a:hover {
     font-weight: 600;
-    background-color: black;
+    background-color: rgb(253, 214, 128);
+    color: black;
 }
 
 main .banner1 {
@@ -147,15 +154,15 @@ main .banner1 {
 }
 
 main .messagio-finale .testo-sotto h1 {
-    margin-bottom: 0;
+    margin-bottom: 0; /* senza margin bottom per essere vicino al sottotitolo */
 }
 
 main .messagio-finale .testo-sotto h2 {
-    margin-top: 4px;
+    margin-top: 0; /* senza margin top per essere vicino al titolo */
 }
 
 main .messagio-finale .dati-internet-home {
-    display: grid;
+    display: grid; /* per gestire ogni news composta de img+testo+link come blocco e sua posizione con altri news */
     grid-template-columns: auto auto;
     column-gap: 150px;
     margin: 10px 60px;
@@ -167,9 +174,7 @@ main .messagio-finale .dati-internet-home .grid-item {
 }
 
 main .messagio-finale .dati-internet-home img {
-    display: block;
     height: 300px;
-    margin-bottom: 5px;
 }
 
 main .messagio-finale .dati-internet-home a {
@@ -184,13 +189,13 @@ main .messagio-finale .dati-internet-home a:hover {
 
 main .messagio-finale .raccontaci a {
     border: 3px solid black;
-    padding: 15px;
+    padding: 13px;
     border-radius: 3px;
     display: block;
     background-color: #1a1a70;
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     margin: 20px 2px;
 }
@@ -199,11 +204,17 @@ main .messagio-finale .raccontaci a {
 
 /* SECTION PER STILI NAVIGATION BAR ASIDE */
 
+main  {
+    position: relative; /* per posizionare dopo il blocco aside */
+    font-size: 20px;
+    font-weight: 600;
+}
+
 main aside {
     background-color: lightgrey;
     width: 20%;
-    position: absolute;
-    height: 100%;
+    position: absolute; /* per posizionare questo aside */
+    height: 100%; /* per riempire tutta la lunghezza del main */
 }
 
 main aside .aside-navigation-bar nav ul li {
@@ -225,18 +236,18 @@ main aside .aside-navigation-bar nav ul li a:hover {
 
 /* SECTION PER STILI CHI SIAMO E NOSTRA STORIA */
 
-main .testo-chi-siamo, main .testo-storia {
+main .chi-siamo, main .colaboratori, main .banner2, main .testo-storia, main .storia-img {
     margin-left: 300px;
     font-size: 20px;
 }
 
-main .testo-chi-siamo h2, main .testo-storia h2 {
+main .chi-siamo h2, main .testo-storia h2 {
     font-style: italic;
     font-weight: 600;
 }
 
-main .testo-chi-siamo .colaboratori {
-    display: grid;
+main .colaboratori {
+    display: grid; /* per gestire info ogni colab composta da img+testo come blocco e sua posizione con altri colab */
     grid-template-columns: auto auto;
     row-gap: 50px;
     column-gap: 20px;
@@ -244,30 +255,31 @@ main .testo-chi-siamo .colaboratori {
     color: rgb(3, 136, 160);
 }
 
-main .testo-chi-siamo .colaboratori img {
+main .colaboratori img {
     height: 180px;
     border: 2px solid rgb(3, 136, 160);
     padding: 8px;
 }
 
-main .testo-chi-siamo .banner1 {
+main .banner2 {
+    background-image: linear-gradient(rgb(253, 214, 128), rgb(250, 237, 196));
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 20px;
     margin-bottom: 0; /* per evitare spazio con footer */    
 }
 
-main .testo-storia .storia-img img {
+main .storia-img img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-main .testo-storia .storia-img img {
     width: 60%;
 }
 
 
 /* SECTION PER STILI SERVIZI */
 
-main .servizi {
+main .servizi, main .img-servizi, main .link-contatti {
     margin-left: 300px;
     font-size: 20px;
 }
@@ -277,7 +289,7 @@ main .servizi h2 {
     font-weight: 600;
 }
 
-main .servizi .img-servizi {
+main .img-servizi {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 50px;
@@ -286,11 +298,11 @@ main .servizi .img-servizi {
     justify-content: start;
 }
 
-main .servizi .img-servizi img {
+main .img-servizi img {
     width: 450px;
 }
 
-main .servizi a {
+main .link-contatti a {
     border: 3px solid black;
     border-radius: 10px;
     padding: 10px;
@@ -303,61 +315,47 @@ main .servizi a {
     text-align: center;
 }
 
-main .servizi a:hover {
-    background-color: #f3b9b9;
+main .link-contatti a:hover {
+    background-color: rgb(253, 214, 128);
     color: black;
-    border: none;
 }
 
 
 /* SECTION PER STILI PROGETTI */
 
-main .progetti {
+main .clienti, main .banner3, main .partner {
     margin-left: 300px;
     font-size: 20px;
     text-align: center;
 }
 
-main .progetti h1 {
+main .clienti h1, main .partner h1 {
     font-style: italic;
     font-weight: 600;
 }
 
-main .progetti .clienti {
+main .clienti .clienti-grid, main .partner .partner-grid {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
 }
 
-main .progetti .clienti img {
+main .clienti .clienti-grid img, main .partner .partner-grid img {
     height: 180px;
     border: 2px solid lightgray;
     padding: 20px;
     margin: 40px 0;
 }
 
-main .progetti .partner {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-items: center;
+main .banner3 {
+    background-image: linear-gradient(rgb(128, 253, 205), rgb(211, 250, 196));
+    text-align: center;
+    padding: 100px 0;
+    margin-top: 20px;
 }
-
-main .progetti .partner img {
-    height: 180px;
-    border: 2px solid lightgray;
-    padding: 20px;
-    margin: 40px 0;
-}
-
 
 
 /* SECTION PER STILI CONTATTI */
-
-main  {
-    position: relative;
-    font-size: 20px;
-    font-weight: 600;
-}
 
 main .contatti {
     margin-left: 350px;
@@ -365,15 +363,15 @@ main .contatti {
     height: 340px;
 }
 
-main .contatti h2, main .contatti h4{
-    margin: 30px 0;
+main .contatti h2, main .contatti h4 {
+    margin: 30px 0; /* separazione tra righe */
 }
 
 main .contatti ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 200px;
+    width: 200px; /* larghezza per il justify precedente */
     padding: 0;
 }
 
@@ -384,8 +382,12 @@ main .contatti  ul li a {
     text-decoration: none;
 }
 
+main .contatti  ul li a:hover {
+    color: darkblue;
+}
+
 main .contatti iframe {
-    position: absolute;
+    position: absolute; /* main aside ha position relative */
     top: 20px;
     left: 830px;
 }

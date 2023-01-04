@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <header>
+    <header> <!-- Idem Home cambia il titolo -->
       <div class="navbar">
         <nav>
           <ul>
@@ -36,7 +36,7 @@
               <a href="../Pages/Servizi.html">Servizi</a>
             </li>
             <li>
-              <a href="../Pages/Progetti.html">Progetti</a>
+              <a class="active" href="../Pages/Progetti.html">Progetti</a>
             </li>
             <li>
               <a href="../Pages/Contatti.html">Contatti</a>
@@ -53,7 +53,7 @@
       </div>
     </header>
 
-    <main>
+    <main> <!-- include 4 grandi blocchi: 1-Aside (NavBar), 2-Testo+IMG(grid), 3-Banner, 4-Testo+IMG(grid) -->
       <aside>
         <div class="aside-navigation-bar">
           <nav>
@@ -81,10 +81,10 @@
         </div>
       </aside>
 
-      <div class="progetti">
+      <div class="clienti">
         <br />
         <h1>I nostri clienti</h1>
-        <div class="clienti">
+        <div class="clienti-grid">
           <img src="../Images/Progetti/sacla-logo.jpg" />
           <img src="../Images/Progetti/lego-logo.jpg" />
           <img src="../Images/Progetti/siropack-logo.jpg" />
@@ -92,17 +92,19 @@
           <img src="../Images/Progetti/patagonia-logo.jpg" />
           <img src="../Images/Progetti/chiquita-logo.jpg" />
         </div>
+      </div>
 
-        <div class="banner1">
-          <p>BANNER</p>
-        </div>
+      <div class="banner3">
+          <p>BANNER 3</p>
+      </div>
 
+      <div class="partner">
         <h1>I nostri Partner</h1>
         <h3>
           Abbiamo il piacere di lavorare insieme ad aziende leader e prestigiose
           istituzioni educative
         </h3>
-        <div class="partner">
+        <div class="partner-grid">
           <img src="../Images/Progetti/Top-ix.png" />
           <img src="../Images/Progetti/Logo_PoliTo_dal_2021_blu.png" />
           <img src="../Images/Progetti/UnivSalamanca.png" />
@@ -110,13 +112,13 @@
       </div>
     </main>
 
-    <footer>
-      <section class="logo">
+    <footer> <!-- idem tutte le pagine -->
+      <div class="logo">
         <img src="../Images/Footer/alchemy.png" />
         <h2>&reg Tech Solutions</h2>
-      </section>
+      </div>
 
-      <section class="navfooter">
+      <div class="navfooter">
         <div class="navbar">
           <nav>
             <ul>
@@ -138,9 +140,9 @@
             </ul>
           </nav>
         </div>
-      </section>
+      </div>
 
-      <section class="info-personali">
+      <div class="info-personali">
         <ul>
           <li>
             <i class="fa-sharp fa-solid fa-map-location-dot"></i>
@@ -169,7 +171,7 @@
             >
           </li>
         </ul>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
