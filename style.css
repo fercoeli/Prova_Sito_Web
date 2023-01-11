@@ -164,7 +164,7 @@ main .messagio-finale .testo-sotto h2 {
 main .messagio-finale .dati-internet-home {
     display: grid; /* per gestire ogni news composta de img+testo+link come blocco e sua posizione con altri news */
     grid-template-columns: auto auto;
-    column-gap: 150px;
+    justify-content: space-around;
     margin: 10px 60px;
 }
 
@@ -202,7 +202,10 @@ main .messagio-finale .raccontaci a {
 
 
 
-/* SECTION PER STILI NAVIGATION BAR ASIDE */
+/* SECTION PER STILI NAVIGATION BAR ASIDE
+(Obiettivo: avere una aside bar della lunghezza totale del main.
+Con questa configurazione NON funziona quando cambia la dimensione 
+dello schermo in riferimento ai testi/immagini laterali. */
 
 main  {
     position: relative; /* per posizionare dopo il blocco aside */
