@@ -240,7 +240,7 @@ main aside .aside-navigation-bar nav ul li a:hover {
 /* SECTION PER STILI CHI SIAMO E NOSTRA STORIA */
 
 main .chi-siamo, main .colaboratori, main .banner2, main .testo-storia, main .storia-img {
-    margin-left: 300px;
+    margin-left: 23%;
     font-size: 20px;
 }
 
@@ -269,6 +269,7 @@ main .banner2 {
     text-align: center;
     padding: 100px 0;
     margin-top: 20px;
+    margin-left: 20%;
     margin-bottom: 0; /* per evitare spazio con footer */    
 }
 
@@ -283,7 +284,7 @@ main .storia-img img {
 /* SECTION PER STILI SERVIZI */
 
 main .servizi, main .img-servizi, main .link-contatti {
-    margin-left: 300px;
+    margin-left: 23%;
     font-size: 20px;
 }
 
@@ -327,7 +328,7 @@ main .link-contatti a:hover {
 /* SECTION PER STILI PROGETTI */
 
 main .clienti, main .banner3, main .partner {
-    margin-left: 300px;
+    margin-left: 23%;
     font-size: 20px;
     text-align: center;
 }
@@ -355,13 +356,14 @@ main .banner3 {
     text-align: center;
     padding: 100px 0;
     margin-top: 20px;
+    margin-left: 20%;
 }
 
 
 /* SECTION PER STILI CONTATTI */
 
 main .contatti {
-    margin-left: 350px;
+    margin-left: 28%;
     padding: 50px 0 50px 40px;
     height: 340px;
 }
